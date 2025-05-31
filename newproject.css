@@ -10,6 +10,7 @@
 header{
     height: 60px;
     width: 100%;
+    
    
 }
 .header-cnt{
@@ -102,10 +103,12 @@ header{
 /* ========== Responsive Header ========== */
 @media (max-width: 768px) {
     .header-cnt {
+        height: 10vh;
         flex-direction: column;
         align-items: center;
         height: auto;
         padding: 10px 0;
+        /* border: 2px red solid; */
     }
 
     .left, .right {
@@ -123,7 +126,7 @@ header{
     }
 
     .serach {
-        width: 90%;
+        width: 110%;
         height: auto;
         flex-direction: row;
         justify-content: center;
@@ -143,10 +146,22 @@ header{
         margin-left: 10px;
         margin-top: 0;
     }
-
+    .right{
+        width: 100% !important;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* border: 2px red solid; */
+ 
+        
+    }
+  
     .right i {
         font-size: 20px;
         padding: 10px;
+        /* border: 2px blue solid; */
+        
     }
 
     .right img {
@@ -175,25 +190,34 @@ nav{
     margin-top: 10px;
     /* margin-left: 15px; */
     /* border: 10px rgb(241, 236, 236) solid; */
-    /* border: 2px blue solid; */
+   
     
 }
 @media(max-width:576px){
     nav{
-        margin-top: 80px;
+        width: 100%;
+        height: 80px;
+        margin-top: 150px;
     }
+    .all_products img{
+        width: 50px;
+        height: 50px;
+    }
+   
 }
 
 .carousel{
     width: 100%;
+   
     /* margin-left: 15px; */
     border-style: solid;
     border-color: rgb(241, 236, 236);
     border-width: 5px 10px 15px 10px;
+  
     /* margin-top: 15px; */
 }
 .all_products{
-  
+   
     display: flex;
     justify-content: space-around;
     /* border: 2px solid; */
@@ -261,6 +285,7 @@ nav ul{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+   
     
 }
 
